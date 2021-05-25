@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Application Name</title>
+    </head>
+    <body>
+        <span id="bg"></span>
+        <img src="./src/img/icon.png">
+    </body>
+</html>
+<style>
+::selection{background: transparent; color: white;}
+span#bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background: #3f4256;
+    border-radius: 20px;
+    z-index: -1;
+}
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    pointer-events: none;
+}
+</style>

@@ -1,0 +1,15 @@
+{
+  "name": "electron-splash-screen",
+  "version": "1.0.0",
+  "description": "Show a splash screen for a few seconds while the main window loads.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+
+  },
+  "author": "KorbsStudio",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^12.0.9"
+  }
+}
