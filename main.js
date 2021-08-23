@@ -8,8 +8,8 @@ function createWindow () {
     autoHideMenuBar: true,
   })
   const splashWindow = new BrowserWindow ({
-    width: 500,
-    height: 500,
+    width: 250,
+    height: 250,
     show: true,
     frame: false,
     transparent: true,
@@ -18,12 +18,10 @@ function createWindow () {
   })
   splashWindow.loadFile('splash.html')
   mainWindow.loadFile('index.html')
-  setTimeout(() => {
-   mainWindow.show();
-  }, 5000); 
-  setTimeout(() => {
-    splashWindow.close();
-  }, 4000);
+  mainWindow.once('ready-to-show', () => {
+    splashWindow.destroy();
+    mainWindow.show();
+  });
 }
 app.on('ready', () => setTimeout(createWindow, 400));
 app.disableHardwareAcceleration();

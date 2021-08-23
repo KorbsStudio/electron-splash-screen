@@ -5,11 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron ."
-
   },
   "author": "KorbsStudio",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^12.0.9"
+    "electron": "^13.2.1"
   }
 }

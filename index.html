@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Application Name</title>
+    <title>Electron Sample</title>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -8,11 +9,17 @@
 </html>
 <style>
 body {
-  background: rgb(70, 74, 110);
+  background: rgb(109, 80, 180);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
+::selection{background: transparent; color: rgba(255, 255, 255, 0.5);}
 h1 {
-  margin: 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
 }
 </style>
